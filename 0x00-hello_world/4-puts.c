@@ -1,7 +1,7 @@
 #include <studio.h>
 /**
  * main - entry block
- * return : o after printing the function
+ * return: 0 after printing the function
  */
 int main(void)
 {puts ("\" programming is like building a multilingual puzzlee");
