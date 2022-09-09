@@ -4,7 +4,7 @@
  * main - entry point
  * Return: Always 0 (sucess trial)
  */
-int main(void) i
+int main(void)
 
 {
 		int n;
