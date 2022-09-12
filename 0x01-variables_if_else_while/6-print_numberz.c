@@ -10,7 +10,7 @@ int n;
 
 for (; n < 10 ; n++)
 
-putchar(n);
+putchar('0' + n);
 
 putchar('\n');
 
