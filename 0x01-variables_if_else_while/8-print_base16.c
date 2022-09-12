@@ -7,15 +7,23 @@
  */
 int main(void)
 {
+unsigned char a = '0';
+int i;
 
-	char b[16] = "0123456789abcdef";
-	int i = 0;
-
-while (i < 16)
+for (i = 0; i < 10; i++)
 {
-	putchar(b[i]);
-	putchar(i++);
+putchar(a);
+a++;
+
 }
-putchar ('\n');
-	return (0);
+
+a = '1';
+
+for (i = 0; i < 6; i++)
+{
+putchar('0' + a);
+a++;
+}
+putchar('\n');
+return (0);
 }
