@@ -22,6 +22,6 @@ int y;
 				_putchar((y / 10) + '0');
 			_putchar((y % 10) + '0');
 		}
-		_putchar(10);
+		_putchar('\n');
 	}
 }
