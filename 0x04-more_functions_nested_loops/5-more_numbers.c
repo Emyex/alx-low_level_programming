@@ -20,7 +20,7 @@ int y;
 		{
 			if (y > 9)
 				_putchar((y / 10) + '0');
-			_putchar((y % 1)0 + '0');
+			_putchar((y % 10) + '0');
 		}
 		_putchar(10);
 	}
