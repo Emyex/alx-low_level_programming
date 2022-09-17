@@ -4,7 +4,7 @@
 /**
  * print_diagonal - draws a diagonal line on the terminal
  *@n: number of times the diagonal line is printed
- *
+ *Return: returns nothing
  */
 
 void print_diagonal(int n)
@@ -13,7 +13,7 @@ void print_diagonal(int n)
 
 	if (n > 0)
 	{
-	for (lenth = 0; lenth <= n; lenth++)
+	for (lenth = 0; lenth < n; lenth++)
 	{
 
 		for (breath = 0; breath < lenth; breath++)
