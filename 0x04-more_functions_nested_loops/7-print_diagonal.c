@@ -11,18 +11,18 @@ void print_diagonal(int n)
 {
 	int lenth, breath;
 
-	if (n > 1)
+	if (n > 0)
 	{
-	for (lenth = 1; lenth <= n; lenth++)
+	for (lenth = 0; lenth <= n; lenth++)
 	{
 
-		for (breath = 1; breath < lenth; breath++)
+		for (breath = 0; breath < lenth; breath++)
 		{
 			_putchar(' ');
 		}
 		_putchar('\\');
 
-		if (lenth == (n - 2))
+		if (lenth == (n - 1))
 {
 			continue;
 }
