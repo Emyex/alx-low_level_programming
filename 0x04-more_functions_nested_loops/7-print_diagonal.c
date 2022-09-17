@@ -9,25 +9,15 @@
 
 void print_diagonal(int n)
 {
-	int lenth, breath;
+int x, y;
 
-	if (n > 0)
-	{
-	for (lenth = 0; lenth < n; lenth++)
-	{
-
-		for (breath = 0; breath < lenth; breath++)
-		{
-			putchar(' ');
-		}
-		putchar('\\');
-
-		if (lenth == (n - 1))
+for (y = 1; y <= n; y++)
 {
-			continue;
+for (x = 1; x < y; x++)
+_putchar(' ');
+_putchar('\\');
+_putchar('\n');
 }
-		putchar('\n');
-	}
-		putchar('\n');
-}
+if (n < 1)
+_putchar('\n');
 }
