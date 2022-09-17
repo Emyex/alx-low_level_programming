@@ -18,16 +18,16 @@ void print_diagonal(int n)
 
 		for (breath = 0; breath < lenth; breath++)
 		{
-			_putchar(' ');
+			putchar(' ');
 		}
-		_putchar('\\');
+		putchar('\\');
 
 		if (lenth == (n - 1))
 {
 			continue;
 }
-		_putchar('\n');
+		putchar('\n');
 	}
-		_putchar('\n');
+		putchar('\n');
 }
 }
