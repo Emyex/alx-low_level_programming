@@ -1,7 +1,8 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _puts - write afunction that print a string,followed by a new line
+ * _puts - write  a function that print a string,followed by a new line
  * @str: string to be printed
  * Return: always return 0
  */
@@ -12,11 +13,11 @@ void _puts(char *str)
 	while (str[i] != '\0')
 	{
 
-		_putchar(str[i]);
+	putchar(str[i]);
 
 		i++;
 
 	}
 
-	_putchar('\n');
+	putchar('\n');
 }
