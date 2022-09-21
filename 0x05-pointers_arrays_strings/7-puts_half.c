@@ -7,21 +7,18 @@
  * Return: always return 0
  */
 void puts_half(char *str)
+
 {
-	int ct, even, neg;
+int j, i = 0;
 
-	for (ct = 0; str[ct] != '\0'; ct++)
-		;
-	if ((ct % 2) == 0)
-	{
-		for (even = ct / 2; str[even] != '\0'; even++)
-
-			putchar(str[even]);
-	}
-	else
-	{
-		for (neg = (ct - 1) / 2; str[neg] != '\0'; neg++)
-			putchar(str[neg + 1]);
-	}
-	putchar('\n');
+while (*(str + i))
+i++;
+j = i / 2;
+if (i % 2)
+j += 1;
+while (j < i)
+{
+putchar(*(str + j));
+j++;										}
+putchar('\n');
 }
