@@ -1,4 +1,4 @@
-include <stdlib.h>
+#include <stdlib.h>
 #include "dog.h"
 
 int _strLen(char *str);
@@ -51,7 +51,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	fillMem(owner, ownerLen, n_dog->owner);
 
 	n_dog->age = age;
-
 	return (n_dog);
 }
 
@@ -69,7 +68,6 @@ int _strLen(char *str)
 
 	while (str[i])
 		i++;
-
 	return (i);
 }
 
@@ -89,6 +87,5 @@ void fillMem(char *str, int strLen, char *dest)
 
 	for (i = 0; i < strLen; i++)
 		dest[i] = str[i];
-
 	dest[i] = '\0';
 }
